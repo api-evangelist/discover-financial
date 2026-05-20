@@ -23,6 +23,10 @@ modified: '2026-04-28'
 specificationVersion: '0.20'
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/discoverfinancial
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/discover-financial-services
   - url: https://www.discover.com/
     name: Discover
     type: Website
