@@ -23,6 +23,10 @@ modified: '2026-04-28'
 specificationVersion: '0.20'
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/discover-financial-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/discover-financial-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/discoverfinancial
   - type: LinkedIn
