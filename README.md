@@ -21,7 +21,14 @@ Discover Financial Services is a direct banking and payment services company tha
 
 ## APIs
 
-Discover's API products are delivered through the Discover Global Network partner program. Public OpenAPI artifacts are not openly distributed and require partner authentication; therefore no machine-readable OpenAPI specs are bundled in this repository.
+Discover's real first-party developer surface is the Discover Global Network (DGN) Developer Center (developer.discover.com), a partner-gated program that advertises interactive OpenAPI documentation behind sign-in. Four documented card-network API products are represented here as documentation-only entries:
+
+- **Discover ProtectBuy 3-D Secure API** — EMV 3-D Secure cardholder authentication
+- **Discover Secure Remote Commerce (Click to Pay) API** — EMVCo SRC tokenized online checkout
+- **Discover Stored Token Services API** — payment tokenization / network tokens
+- **Discover Deliver Push Payments API** — Original Credit Transaction disbursements
+
+No machine-readable OpenAPI/Swagger/Postman artifacts are publicly downloadable — the catalog and reference require partner authentication, so none are bundled. Consumer account-data access is delivered through open-finance aggregators (Plaid, Finicity); Discover publishes no first-party FDX / Section 1033 retail-banking data-access API.
 
 ## Common Properties
 

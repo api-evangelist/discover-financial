@@ -1,0 +1,48 @@
+reviewer: API Evangelist
+date: '2026-07-23'
+provider: Discover Financial Services
+slug: discover-financial
+summary: >-
+  Discover's real first-party API surface is the Discover Global Network (DGN)
+  Developer Center at developer.discover.com — a partner-gated developer program
+  that advertises interactive OpenAPI documentation but requires sign-in before
+  any spec or reference is visible. The public marketing/solutions pages
+  enumerate four documented card-network API products: ProtectBuy (EMV 3-D
+  Secure), Secure Remote Commerce / Click to Pay, Stored Token Services
+  (tokenization), and Discover Deliver push payments. Each is represented as a
+  humanURL-only entry; no machine-readable spec is publicly downloadable.
+developer_portal: https://developer.discover.com/
+developer_portal_status: 200 (public landing; API catalog and OpenAPI behind sign-in)
+src_developer_console: https://console.src.developer.discover.com/
+downloadable_specs: none
+spec_provenance: >-
+  No public OpenAPI/Swagger/Postman artifacts. The Developer Center states it
+  offers "interactive OpenAPI documentation," but the catalog and reference are
+  gated behind partner authentication, so nothing could be harvested verbatim.
+  All four API entries are documentation/humanURL-only, sourced from the public
+  discoverglobalnetwork.com solutions pages and the developer.discover.com
+  landing page.
+auth_model: >-
+  Partner-gated onboarding via Discover account executive / partner portal.
+  Payment products use EMVCo protocols (EMV 3-D Secure for ProtectBuy, EMVCo SRC
+  for Click to Pay, EMVCo tokenization for Stored Token Services). Underlying API
+  authentication (API key / mTLS / OAuth2) is not publicly disclosed and requires
+  partner enrollment to confirm.
+open_finance_posture:
+  first_party_consumer_api: none
+  aggregator_access:
+    - Plaid
+    - Finicity
+  fdx_1033_posture: >-
+    No first-party FDX/Section 1033 consumer data-access developer interface is
+    publicly documented under discover.com. Consumer account, balance, and
+    transaction data is reached through open-finance aggregators (Plaid,
+    Finicity) rather than a Discover-hosted FDX API. Discover's documented
+    developer surface is card-network payments/security (DGN), not retail-bank
+    account data sharing.
+github_org: https://github.com/discoverfinancial (8 repos, all archived 2026-06-12; no API specs)
+findings:
+  - Real, honest developer surface is DGN payments/security, partner-gated.
+  - Four documented API products added as humanURL-only entries (no fabricated specs).
+  - Consumer open-banking access is aggregator-only (Plaid/Finicity); no first-party 1033 API.
+  - Zero downloadable OpenAPI specs; interactive docs sit behind partner sign-in.

@@ -1,16 +1,33 @@
 aid: discover-financial
 name: Discover Financial Services
+kind: company
 description: >-
-  Discover Financial Services is a direct banking and payment services company
-  that owns the Discover Network, the PULSE network, and Diners Club
-  International. Through Discover Global Network and its partner product
-  portal, Discover offers API and enablement resources to issuers, acquirers,
-  merchants, and fintech partners.
+  Discover Financial Services is a US direct bank and payments company that owns
+  the Discover Network, the PULSE debit network, and Diners Club International.
+  Its Discover Global Network (DGN) developer program exposes a partner-gated
+  developer center with interactive OpenAPI documentation for card-network
+  products — EMV 3-D Secure (ProtectBuy), Secure Remote Commerce / Click to Pay,
+  Stored Token Services (tokenization), and Discover Deliver push payments.
+  Consumer account-data access is delivered through open-finance aggregators
+  (Plaid, Finicity) rather than a first-party retail-banking API.
 url: https://raw.githubusercontent.com/api-evangelist/discover-financial/refs/heads/main/apis.yml
 type: Index
+accessModel:
+  pricing: unknown
+  onboarding: partner
+  trial: false
+  try_now: false
+  public: false
+  label: Partner-gated
+  confidence: low
+  source:
+    - developer-portal
+    - documentation
+  generated: '2026-07-23'
+  method: derived
 position: Producer
 access: Partner
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/discover-financial.png
 tags:
   - Banking
   - Cards
@@ -18,10 +35,104 @@ tags:
   - Fortune 500
   - Open Banking
   - Payments
+  - United States
+  - Card Network
+  - 3-D Secure
+  - Tokenization
 created: '2026-03-21'
-modified: '2026-04-28'
-specificationVersion: '0.20'
-apis: []
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+  - aid: discover-financial:protectbuy-3ds
+    name: Discover ProtectBuy 3-D Secure API
+    description: >-
+      ProtectBuy is Discover Global Network's EMV 3-D Secure (3DS) cardholder
+      authentication service. Built on the EMVCo 3-D Secure protocol, it lets
+      merchants, acquirers, and 3DS servers authenticate Discover, Diners Club,
+      and network-alliance cardholders at checkout, challenge high-risk
+      transactions with a one-time password, and shift liability for
+      card-not-present fraud across web, mobile, and connected-device commerce.
+      Documentation and OpenAPI reference are published in the partner-gated
+      Discover Developer Center; full specs require partner authentication.
+    humanURL: https://www.discoverglobalnetwork.com/solutions/fraud-security/protectbuy/
+    tags:
+      - 3-D Secure
+      - Fraud
+      - Authentication
+      - Payments
+      - United States
+    properties:
+      - type: DeveloperPortal
+        url: https://developer.discover.com/
+      - type: Documentation
+        url: https://www.discoverglobalnetwork.com/solutions/fraud-security/protectbuy/
+  - aid: discover-financial:secure-remote-commerce
+    name: Discover Secure Remote Commerce (Click to Pay) API
+    description: >-
+      Discover's Secure Remote Commerce (SRC) implementation powers Click to Pay,
+      the EMVCo standard for a streamlined, tokenized online checkout across
+      participating card networks. The SRC developer program exposes enrollment,
+      recognition, and checkout operations so merchants and payment providers can
+      offer a consistent guest and returning-cardholder experience without
+      handling raw PANs. A dedicated SRC developer console and interactive
+      OpenAPI reference are available behind partner sign-in on the Discover
+      Developer Center.
+    humanURL: https://www.discoverglobalnetwork.com/solutions/enable-payments/secure-remote-commerce/
+    tags:
+      - Secure Remote Commerce
+      - Click to Pay
+      - Checkout
+      - Payments
+      - United States
+    properties:
+      - type: DeveloperPortal
+        url: https://console.src.developer.discover.com/
+      - type: Documentation
+        url: https://www.discoverglobalnetwork.com/solutions/enable-payments/secure-remote-commerce/
+  - aid: discover-financial:stored-token-services
+    name: Discover Stored Token Services API
+    description: >-
+      Stored Token Services is Discover Global Network's payment tokenization
+      service. It replaces sensitive card account numbers with network tokens for
+      card-on-file, digital-wallet, and recurring-payment use cases, and manages
+      the token lifecycle — provisioning, updates, and suspension — so merchants
+      and token requestors can secure every digital transaction and reduce the
+      scope of stored credential data. The API is documented with interactive
+      OpenAPI reference in the partner-gated Discover Developer Center.
+    humanURL: https://www.discoverglobalnetwork.com/solutions/fraud-security/stored-token-services/
+    tags:
+      - Tokenization
+      - Card on File
+      - Security
+      - Payments
+      - United States
+    properties:
+      - type: DeveloperPortal
+        url: https://developer.discover.com/
+      - type: Documentation
+        url: https://www.discoverglobalnetwork.com/solutions/fraud-security/stored-token-services/
+  - aid: discover-financial:discover-deliver-push-payments
+    name: Discover Deliver Push Payments API
+    description: >-
+      Discover Deliver is Discover Global Network's push-payments (Original Credit
+      Transaction) service, enabling the quick, convenient, and secure transfer of
+      funds directly to eligible Discover, Diners Club, and alliance-network cards.
+      It supports disbursement use cases such as gig-economy payouts, refunds,
+      account-to-account transfers, and insurance or lending disbursements. The
+      push-payments API is documented in the partner-gated Discover Developer
+      Center; production access is arranged through a Discover account executive.
+    humanURL: https://www.discoverglobalnetwork.com/solutions/enable-payments/discover-deliver-push-payments-solution/
+    tags:
+      - Push Payments
+      - Disbursements
+      - OCT
+      - Payments
+      - United States
+    properties:
+      - type: DeveloperPortal
+        url: https://developer.discover.com/
+      - type: Documentation
+        url: https://www.discoverglobalnetwork.com/solutions/enable-payments/discover-deliver-push-payments-solution/
 common:
   - type: VulnerabilityDisclosure
     url: security/discover-financial-vulnerability-disclosure.yml
@@ -46,6 +157,9 @@ common:
   - url: https://www.discoverglobalnetwork.com/
     name: Discover Global Network
     type: Network
+  - url: https://technology.discover.com/
+    name: Discover Technology
+    type: Blog
   - url: https://investorrelations.discover.com/
     name: Investor Relations
     type: InvestorRelations
