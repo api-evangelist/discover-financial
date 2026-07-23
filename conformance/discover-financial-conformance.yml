@@ -1,0 +1,58 @@
+generated: '2026-07-23'
+method: searched
+source: >-
+  Discover Global Network public solution pages
+  (discoverglobalnetwork.com) + EMVCo specification references
+note: >-
+  Discover's card-network products implement EMVCo global interoperability
+  specifications. Full OpenAPI references are partner-gated, so per-operation
+  conformance (RFC 9457 errors, pagination, idempotency) cannot be verified
+  from a public spec and is recorded as unknown rather than asserted.
+standards:
+- id: emvco-3d-secure
+  name: EMV 3-D Secure (3DS)
+  conforms: true
+  evidence: >-
+    ProtectBuy is Discover Global Network's EMVCo 3-D Secure cardholder
+    authentication service, built on the EMVCo 3-D Secure protocol.
+  source: https://www.discoverglobalnetwork.com/solutions/fraud-security/protectbuy/
+- id: emvco-secure-remote-commerce
+  name: EMV Secure Remote Commerce (Click to Pay)
+  conforms: true
+  evidence: >-
+    Discover SRC is the Discover Global Network implementation of EMVCo's
+    EMV Secure Remote Commerce Specifications; Click to Pay is based on the
+    EMV SRC Specifications.
+  source: https://www.discoverglobalnetwork.com/solutions/enable-payments/secure-remote-commerce/
+- id: emvco-payment-tokenisation
+  name: EMV Payment Tokenisation
+  conforms: true
+  evidence: >-
+    Stored Token Services replaces card account numbers with network tokens
+    per EMV Payment Tokenisation, managing the token lifecycle
+    (provisioning, updates, suspension).
+  source: https://www.discoverglobalnetwork.com/solutions/fraud-security/stored-token-services/
+- id: oct-push-payments
+  name: Original Credit Transaction (OCT) push payments
+  conforms: true
+  evidence: >-
+    Discover Deliver is Discover Global Network's push-payments (Original
+    Credit Transaction) service for funds disbursement to eligible cards.
+  source: https://www.discoverglobalnetwork.com/solutions/enable-payments/discover-deliver-push-payments-solution/
+- id: pci-dss
+  name: PCI DSS
+  conforms: unknown
+  evidence: >-
+    Discover is a founding PCI SSC member and a payment card network; a
+    public, provider-scoped PCI attestation for the developer APIs was not
+    located on the public developer surface.
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details
+  conforms: unknown
+  evidence: No public OpenAPI available to inspect error media types.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: unknown
+  evidence: >-
+    Partner API authentication is arranged during onboarding; no public
+    OpenAPI securitySchemes available to confirm the flow.

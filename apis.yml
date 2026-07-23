@@ -136,8 +136,14 @@ apis:
 common:
   - type: VulnerabilityDisclosure
     url: security/discover-financial-vulnerability-disclosure.yml
+  - type: Security
+    url: security/discover-financial-vulnerability-disclosure.yml
   - type: DomainSecurity
     url: security/discover-financial-domain-security.yml
+  - type: Conformance
+    url: conformance/discover-financial-conformance.yml
+  - type: LLMsTxt
+    url: llms/discover-financial-llms.txt
   - type: GitHubOrganization
     url: https://github.com/discoverfinancial
   - type: LinkedIn

@@ -1,0 +1,32 @@
+# Discover Financial Services
+
+> Discover Financial Services is a US direct bank and payments company that owns the Discover Network, the PULSE debit network, and Diners Club International. Its Discover Global Network (DGN) developer program exposes a partner-gated developer center with interactive OpenAPI documentation for card-network products — EMV 3-D Secure (ProtectBuy), Secure Remote Commerce / Click to Pay, Stored Token Services (tokenization), and Discover Deliver push payments. Consumer account-data access is delivered through open-finance aggregators (Plaid, Finicity) rather than a first-party retail-banking API.
+
+Note: The Discover Global Network developer program is partner-gated. Full OpenAPI/spec references require partner authentication in the Discover Developer Center; only the public solution/marketing surfaces are linkable here.
+
+## APIs
+
+- [Discover ProtectBuy 3-D Secure API](https://www.discoverglobalnetwork.com/solutions/fraud-security/protectbuy/): EMVCo 3-D Secure cardholder authentication for card-not-present fraud liability shift.
+- [Discover Secure Remote Commerce (Click to Pay) API](https://www.discoverglobalnetwork.com/solutions/enable-payments/secure-remote-commerce/): EMVCo SRC tokenized online checkout / Click to Pay.
+- [Discover Stored Token Services API](https://www.discoverglobalnetwork.com/solutions/fraud-security/stored-token-services/): EMV Payment Tokenisation and network-token lifecycle management.
+- [Discover Deliver Push Payments API](https://www.discoverglobalnetwork.com/solutions/enable-payments/discover-deliver-push-payments-solution/): Original Credit Transaction (OCT) push payments and disbursements.
+
+## Docs
+
+- [Discover Developer Center](https://developer.discover.com/): Partner-gated developer portal with interactive OpenAPI references.
+- [Secure Remote Commerce Developer Console](https://console.src.developer.discover.com/): SRC / Click to Pay developer console (partner sign-in).
+- [Discover Global Network](https://www.discoverglobalnetwork.com/): Card-network products and solutions.
+- [Discover Global Network Partner Portal](https://partner.discoverglobalnetwork.com/): Partner onboarding and program access.
+
+## Security
+
+- [Responsible Disclosure Program](https://www.discover.com/responsible-disclosure/): HackerOne-hosted vulnerability disclosure program.
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/discover-financial/refs/heads/main/conformance/discover-financial-conformance.yml): EMVCo 3DS / SRC / Payment Tokenisation standards conformance.
+
+## Company
+
+- [Discover](https://www.discover.com/): Consumer banking and card products.
+- [Discover Technology Blog](https://technology.discover.com/): Engineering and technology blog.
+- [Investor Relations](https://investorrelations.discover.com/): Financial and investor information.
+- [Privacy Statements](https://www.discover.com/privacy-statements/): Privacy policy.
+- [GitHub](https://github.com/discoverfinancial): Open-source projects.
