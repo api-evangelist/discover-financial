@@ -136,7 +136,7 @@ apis:
 common:
   - type: TermsOfService
     url: https://developer.discover.com/terms-of-use
-  - type: SignUp
+  - type: Signup
     url: https://www.discover.com/register-account/?ICMPGN=SA_LOGIN_OVERLAY_REGISTER
   - type: VulnerabilityDisclosure
     url: security/discover-financial-vulnerability-disclosure.yml
