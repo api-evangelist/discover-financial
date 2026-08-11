@@ -134,6 +134,10 @@ apis:
       - type: Documentation
         url: https://www.discoverglobalnetwork.com/solutions/enable-payments/discover-deliver-push-payments-solution/
 common:
+  - type: TermsOfService
+    url: https://developer.discover.com/terms-of-use
+  - type: SignUp
+    url: https://www.discover.com/register-account/?ICMPGN=SA_LOGIN_OVERLAY_REGISTER
   - type: VulnerabilityDisclosure
     url: security/discover-financial-vulnerability-disclosure.yml
   - type: Security
