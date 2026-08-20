@@ -42,6 +42,17 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/discover-f
 tags:
   - Banking
   - Cards
+  - Financial-Services
+  - Fortune 500
+  - Open Banking
+  - Payments
+  - United States
+  - Card Network
+  - 3D Secure
+  - Tokenization
+tags_raw:
+  - Banking
+  - Cards
   - Financial Services
   - Fortune 500
   - Open Banking
@@ -67,6 +78,12 @@ apis:
       Discover Developer Center; full specs require partner authentication.
     humanURL: https://www.discoverglobalnetwork.com/solutions/fraud-security/protectbuy/
     tags:
+      - 3D Secure
+      - Fraud
+      - Authentication
+      - Payments
+      - United States
+    tags_raw:
       - 3-D Secure
       - Fraud
       - Authentication
