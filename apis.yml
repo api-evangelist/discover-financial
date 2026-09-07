@@ -211,3 +211,5 @@ maintainers:
   - FN: Kin Lane
     url: http://apievangelist.com
     email: kin@apievangelist.com
+x-parent: discover
+x-relationship: product
